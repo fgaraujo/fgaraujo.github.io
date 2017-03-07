@@ -1,9 +1,11 @@
 ---
-title: Contact
+title: Contate-nos
 layout: post
-permalink: /contact/
+permalink: /contato/
 ---
 
-May be a contact form.
+Quer mandar uma sugestão pra gente?
+
+Entre em contato!
 
 Email: <a href="mailto:{{site.email}}">{{site.email}}</a>

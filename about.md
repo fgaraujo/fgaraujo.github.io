@@ -1,13 +1,13 @@
 ---
-title: About Hagura
+title: Sobre Nós
 layout: post
-permalink: /about/
+permalink: /sobre/
 published: true
 ---
+Para acessar nosso portal, **NÃO** desbloqueie o AdBlock!
 
-For more themes please visit [https://jekyll-themes.com](https://jekyll-themes.com){: target="_blank"}
+Você quer saber mais sobre TI, mas está cansado daqueles sites que te enchem de propagandas e comerciais, cursos e mais cursos que não fazem sentido algum?
 
-Does the theme deserve a star?
+Você queria uma dica rápida, mas aí... Você lê, lê, mas sente que nada foi respondido?
 
-<a class="github-button" href="https://github.com/sharu725/hagura" data-style="mega" data-count-href="/sharu725/hagura/stargazers" data-count-api="/repos/sharu725/hagura#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star sharu725/hagura on GitHub">Star</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+Essa é a missão do **TI em Rodelas**. Um blog limpo, escarrado e sem anúncios, onde **você** é a parte mais importante do conteúdo. Seja muito bem-vindo!
