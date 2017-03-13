@@ -50,7 +50,7 @@ Veja a tabela abaixo:
 
 Chamamos de sistema embarcado a todo aquele que atende a requisitos específicos. Alguns exemplos são: Roteadores, celulares, smartphones, etc. É necessário um conjunto de mudanças no kernel Linux de forma que este atenda aos requisitos do sistema.
 
-> [Rafael Alves](https://www.facebook.com/rafael.s.finha) é estagiário de Redes da GigaCom. Atualmente estuda tecnologias Mikrotik e Linux.
+> [Rafael Alves](https://www.facebook.com/rafael.s.finha) é estagiário de Redes da GigaCom. Atualmente estuda tecnologias de Redes e Linux.
 
 
 
