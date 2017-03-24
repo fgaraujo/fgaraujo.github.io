@@ -5,6 +5,8 @@ title: "Google's Python Class #1: Introdução ao Python"
 
 ![google-python-class-image](https://cloud.githubusercontent.com/assets/12460407/24308474/ca384f04-10a6-11e7-8078-6961caab4d8a.png)
 
+**Nota**: Esta é a tradução da primeira parte do curso "Google's Python Class", desenvolvido por Nick Parlante. Você pode acessar o link original [aqui](https://developers.google.com/edu/python/introduction).
+
 Seja bem-vindo ao tutorial online de Python do Google. Ele é baseado no curso introdutório que oferecemos aos funcionários da empresa. O material foi criado nos tempos da versão 2.4 do Python, e nós tentamos manter o conteúdo o mais genérico, atualizado e relevante possível, mantendo-o útil para as versões posteriores da linguagem. 
 
 Tal como foi mencionado antes, este material aborda o Python 2. Apesar de recomendarmos que você "evite" as versões 3.x do Python, é importante que se reconheça que estas representam o futuro da linguagem, visto que novos recursos estarão presentes somente nestas versões. A boa notícia é que desenvolvedores que estejam aprendendo uma ou outra versão estarão aptos para compreender suas peculiaridades e diferenças sem grandes dificuldades. Se você quiser saber mais sobre as diferenças existentes entre as versões 2.x e 3.x do Python, [**este post**](https://www.quora.com/As-someone-interested-in-learning-Python-should-I-start-with-2-x-or-go-straight-to-3-x/answers/2220200?srid=hFhk&share=1) pode ser útil.
