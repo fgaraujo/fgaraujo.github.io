@@ -93,6 +93,70 @@ Como pudemos ver, é fácil trabalhar com variáveis e operadores em Python. Tam
 'hi2'
 ```
 
+## Códigos Fonte em Python
+
+Os códigos fonte em Python utilizam a extensão **.py** e são chamados de "módulos". Veja o código abaixo. Ele é o módulo ```hello.py```, e a forma mais fácil de o executarmos é fazendo uso da linha de comando do sistema operacional. O comando do shell ```python hello.py Alice``` faz uma chamada ao interpretador para executar o módulo ```hello.py```, passando para ele o argumento que foi digitado no prompt, ***"Alice"***. Para saber as diferentes opções existentes quando estamos rodando o Python pela linha de comando, veja [esta página](https://docs.python.org/3/using/cmdline.html) da documentação oficial.
+
+```python
+#!/usr/bin/env python
+
+# A importacao dos modulos e feita aqui
+# O modulo sys e um dos mais utilizados
+import sys
+
+# Recolhimento de nosso argumento vindo da linha de comando
+def main():
+    print 'Ola', sys.argv[1]
+    # Os argumentos vindos do shell estao em sys.argv[1], sys.argv[2] ...
+    # sys.argv[0] e o nome do script em si e pode ser ignorado
+
+# Boilerplate usado para dar chamada a funcao main() e comecar o programa
+if __name__ == '__main__':
+    main()
+```
+
+A execução deste programa a partir da linha de comando seria basicamente assim:
+
+```
+$ python hello.py Guido
+Ola Guido
+$ ./hello.py Alice  ## Sem a necessidade de digitar python antes (Unix)
+Ola Alice
+```
+
+## Importações, Argumentos da Linha de Comando e len()
+
+As instruções de um arquivo Python são lidas de cima para baixo em todas as vezes nas quais o interpretador as executa, ou quando o módulo é importado em outro a ser executado. Um módulo pode ser executado diretamente - tal como fizemos na seção anterior com o comando ```python hello.py Alice``` - ou pode ser importado para uso em outro módulo. Quando um arquivo é executado diretamente, a variável especial ```__name__``` é definida como ```__main__```. Portanto, é comum a existência do boilerplate ```if __name__ ==...``` para a chamada da função principal main() quando o módulo é executado diretamente, mas não quando o módulo é chamado por um outro. 
+
+Em um programa Python padrão, a lista ```sys.argv``` contém a sequência de argumentos digitados no prompt de comando, onde ```sys.argv[0]``` é a própria chamada ao programa, seguido do primeiro argumento, declarado como ```sys.argv[1]```, do segundo, ```sys.argv[2]```, e assim sucessivamente. Se você quiser saber o número de argumentos digitados, pode requisitar este valor de modo simples no Python através da função ```len(sys.argv)```, tal como fizemos quando queríamos saber o comprimento de uma string. Em geral, a função *len()* nos indica o comprimento de uma string, ou o número de elementos em uma lista ou tupla (outra estrutura de dados em arrays), e o número de pares de chaves em um dicionário.
+
+## Funções definidas pelo Usuário
+
+Definimos funções em Python da seguinte maneira:
+
+```python
+# Define uma funcao "repete" que traz 2 argumentos.
+def repeat(s, exclaim):
+    """
+    Retorna a string 's' repetida 3 vezes.
+    Se exclaim for verdadeiro, adicione pontos de exclamacao.
+    """
+
+    result = s + s + s # Tambem podemos usar "s * 3" que sera mais rapido (Porque?)
+    if exclaim:
+        result = result + '!!!'
+    return result
+```
+
+Note que as linhas contidas dentro da função estão dispostas de forma tal que todas possuam o mesmo nível de indentação. Também mostramos 2 formas diferentes de repetir strings, tanto com a utilização do operador "+" (De visualização mais amigável), quanto com a utilização do operador " * " (Mais recomendado para o caso da necessidade de repetir muitas vezes a string). Nos comentários do código indicamos que a realização da repetição com o uso de " * " seria mais rápido do que com a utilização de "+". Isto se dá porque na multiplicação apenas uma operação de cálculo é feita, enquanto as somas sucessivas fazem um cálculo para cada parcela da soma. Ambos os operadores "+" e "*" são denominados "sobrecarregados" por conta de possuírem diferentes significados para números e strings (Assim como outros tipos de dados).
+
+A palavra chave "def" é a definidora de uma função na qual os parâmetros estão identificados entre parênteses e o seu código está devidamente indentado. A primeira linha da função poderá ser uma string de documentação (docstring) que indica o que a função faz. A docstring pode ser de linha única ou de múltiplas linhas, tal como ocorreu no exemplo acima. (Sim, estão as "aspas triplas", um recurso único ao Python!). Variáveis definidas em uma função são de escopo local àquela função. Logo, o valor "result" de uma função será diferente de uma variável "result" que esteja fora da função. A afirmação "return" pode devolver um valor, o que neste caso será o valor requerido por quem chamou a função, tendo em vista os argumentos que foram oferecidos antes da execução desta.
+
+
+
+
+
+
 
 
 
